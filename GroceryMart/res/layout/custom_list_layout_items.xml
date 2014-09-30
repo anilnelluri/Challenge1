@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView 
+        android:id="@+id/itemtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:maxLines="1"
+        android:text="Title"
+        android:layout_marginLeft="5dp"
+        android:ellipsize="end"
+        android:textStyle="bold"/>
+    
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="Price"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/itemtitle"
+        android:layout_alignLeft="@+id/itemtitle"/>
+
+</RelativeLayout>

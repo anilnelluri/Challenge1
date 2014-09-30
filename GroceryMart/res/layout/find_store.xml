@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#B4E0E7">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="62dp"
+        android:text="Enter Zipcode" 
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/zipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_toRightOf="@+id/textView1"
+		android:layout_alignBottom="@+id/textView1"		
+        android:ems="10"
+        android:layout_marginLeft="10dp">
+
+        <requestFocus />
+    </EditText>
+    
+    <Button 
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_alignLeft="@+id/zipcode"
+        android:layout_below="@+id/zipcode"/>
+    
+    <TextView android:id="@+id/nostores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"/>
+	
+    <ListView
+        android:id="@+id/storeslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginTop="20dp"
+		android:visibility="gone">
+        
+    </ListView>
+</RelativeLayout>
